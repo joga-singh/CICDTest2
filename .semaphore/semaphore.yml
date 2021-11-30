@@ -25,3 +25,5 @@ blocks:
         - name: Integration tests
           commands:
             - '''running integration tests'''
+      secrets:
+        - name: match-secrets
