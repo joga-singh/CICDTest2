@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E6A0C2D2756029B00B6268D /* semaphore.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4E6A0C2C2756029B00B6268D /* semaphore.yml */; };
-		4E6A0C2E2756029B00B6268D /* semaphore.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4E6A0C2C2756029B00B6268D /* semaphore.yml */; };
-		4E6A0C2F2756029B00B6268D /* semaphore.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4E6A0C2C2756029B00B6268D /* semaphore.yml */; };
-		4E6A0C302756029B00B6268D /* semaphore.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4E6A0C2C2756029B00B6268D /* semaphore.yml */; };
 		4E90109D274F539F006F7A7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90109C274F539F006F7A7F /* AppDelegate.swift */; };
 		4E90109F274F539F006F7A7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E90109E274F539F006F7A7F /* SceneDelegate.swift */; };
 		4E9010A1274F539F006F7A7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9010A0274F539F006F7A7F /* ViewController.swift */; };
@@ -58,7 +54,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4E6A0C2C2756029B00B6268D /* semaphore.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = semaphore.yml; sourceTree = "<group>"; };
 		4E901099274F539F006F7A7F /* Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E90109C274F539F006F7A7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E90109E274F539F006F7A7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,18 +123,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4E6A0C2B2756024F00B6268D /* semaphore */ = {
-			isa = PBXGroup;
-			children = (
-				4E6A0C2C2756029B00B6268D /* semaphore.yml */,
-			);
-			path = semaphore;
-			sourceTree = "<group>";
-		};
 		4E901090274F539F006F7A7F = {
 			isa = PBXGroup;
 			children = (
-				4E6A0C2B2756024F00B6268D /* semaphore */,
 				4E901131274F58E0006F7A7F /* Constants */,
 				4E901118274F5542006F7A7F /* Project4 */,
 				4E9010FC274F54CD006F7A7F /* Project3 */,
@@ -386,7 +372,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E9010A9274F539F006F7A7F /* LaunchScreen.storyboard in Resources */,
-				4E6A0C2D2756029B00B6268D /* semaphore.yml in Resources */,
 				4E9010A6274F539F006F7A7F /* Assets.xcassets in Resources */,
 				4E9010A4274F539F006F7A7F /* Main.storyboard in Resources */,
 			);
@@ -411,7 +396,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E9010D6274F53CD006F7A7F /* LaunchScreen.storyboard in Resources */,
-				4E6A0C2E2756029B00B6268D /* semaphore.yml in Resources */,
 				4E9010D7274F53CD006F7A7F /* Assets.xcassets in Resources */,
 				4E9010D8274F53CD006F7A7F /* Main.storyboard in Resources */,
 			);
@@ -422,7 +406,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E9010EA274F54BC006F7A7F /* LaunchScreen.storyboard in Resources */,
-				4E6A0C2F2756029B00B6268D /* semaphore.yml in Resources */,
 				4E9010EB274F54BC006F7A7F /* Assets.xcassets in Resources */,
 				4E9010EC274F54BC006F7A7F /* Main.storyboard in Resources */,
 			);
@@ -433,7 +416,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E901104274F5531006F7A7F /* LaunchScreen.storyboard in Resources */,
-				4E6A0C302756029B00B6268D /* semaphore.yml in Resources */,
 				4E901105274F5531006F7A7F /* Assets.xcassets in Resources */,
 				4E901106274F5531006F7A7F /* Main.storyboard in Resources */,
 			);
