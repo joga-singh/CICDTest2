@@ -30,7 +30,6 @@ blocks:
   - name: Build app
     task:
       secrets:
-<<<<<<< HEAD
       - name: match-secrets
       prologue:
       commands:
@@ -40,9 +39,3 @@ blocks:
         - cache restore
         - bundle install --path vendor/bundle
         - cache store
-=======
-        - name: match-secrets
-      jobs:
-        - name: 'Job #1'
-          commands: []
->>>>>>> af3c462897b898bab1bbffc9ca0a178347df70cb
