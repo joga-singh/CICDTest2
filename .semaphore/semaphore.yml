@@ -31,3 +31,11 @@ blocks:
   task:
       secrets:
       - name: match-secrets
+      prologue:
+      commands:
+        - chmod 0600 ~/.ssh/*
+        - ssh-add ~/.ssh/*
+        - checkout
+        - cache restore
+        - bundle install --path vendor/bundle
+        - cache store
