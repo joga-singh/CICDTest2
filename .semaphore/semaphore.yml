@@ -13,6 +13,7 @@ blocks:
             - checkout
       secrets:
         - name: match-secrets
+    dependencies: []
   - name: Tests
     task:
       prologue:
@@ -30,3 +31,28 @@ blocks:
       env_vars:
         - name: LANG
           value: en_US.UTF-8
+    dependencies:
+      - 'Block #1'
+  - name: Build app
+    dependencies:
+      - Tests
+    task:
+      secrets:
+        - name: match-secrets
+      env_vars:
+        - name: LANG
+          value: en_US.UTF-8
+      prologue:
+        commands:
+          - chmod 0600 ~/.ssh/*
+          - ssh-add ~/.ssh/*
+          - checkout
+          - cache restore
+          - bundle install --path vendor/bundle
+          - cache store
+      jobs:
+        - name: Build
+          commands:
+            - bundle exec xcversion select 12.2
+            - bundle exec fastlane build
+            - artifact push job build/TallestTowers.ipa
