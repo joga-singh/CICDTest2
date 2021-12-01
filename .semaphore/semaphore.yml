@@ -34,9 +34,6 @@ blocks:
 
   - name: Build app
   task:
-    
-    secrets:
-      - name: match-secrets
     prologue:
       commands:
         - chmod 0600 ~/.ssh/*
@@ -51,6 +48,8 @@ blocks:
           - bundle exec xcversion select 12.2
           - bundle exec fastlane build
           - artifact push job build/Project1.ipa
+      secrets:
+      - name: match-secrets
       env_vars:
         - name: LANG
           value: en_US.UTF-8
