@@ -17,9 +17,6 @@ blocks:
         
   - name: Tests
     task:
-    env_vars:
-      - name: LANG
-        value: en_US.UTF-8
       prologue:
         commands:
           - checkout
