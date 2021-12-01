@@ -27,3 +27,7 @@ blocks:
             - echo 'running unit tests'
       secrets:
         - name: match-secrets
+  - name: Build app
+  task:
+      secrets:
+      - name: match-secrets
