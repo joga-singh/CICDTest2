@@ -28,11 +28,17 @@ blocks:
             - echo 'running unit tests'
       secrets:
         - name: match-secrets
+    dependencies:
+      - 'Block #1'
   - name: Build app
     task:
       secrets:
         - name: match-secrets
+      jobs:
+        - name: 'Job #1'
+          commands: []
       prologue:
+<<<<<<< HEAD
       commands:
         - chmod 0600 ~/.ssh/*
         - ssh-add ~/.ssh/id_rsa
@@ -46,3 +52,14 @@ blocks:
           - bundle exec xcversion select 12.2
           - bundle exec fastlane build
           - artifact push job build/Project1.ipa
+=======
+        commands:
+          - chmod 0600 ~/.ssh/*
+          - ssh-add ~/.ssh/id_rsa
+          - checkout
+          - cache restore
+          - bundle install --path vendor/bundle
+          - cache store
+    dependencies:
+      - Tests
+>>>>>>> bf2133926f4504eb8cd99025265a45c26c070021
