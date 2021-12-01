@@ -34,9 +34,7 @@ blocks:
 
   - name: Build app
   task:
-    env_vars:
-      - name: LANG
-        value: en_US.UTF-8
+    
     secrets:
       - name: match-secrets
     prologue:
