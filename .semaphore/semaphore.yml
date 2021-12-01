@@ -30,12 +30,15 @@ blocks:
   - name: Build app
     task:
       secrets:
-      - name: match-secrets
+        - name: match-secrets
+      jobs:
+        - name: 'Job #1'
+          commands: []
       prologue:
-      commands:
-        - chmod 0600 ~/.ssh/*
-        - ssh-add ~/.ssh/*
-        - checkout
-        - cache restore
-        - bundle install --path vendor/bundle
-        - cache store
+        commands:
+          - chmod 0600 ~/.ssh/*
+          - ssh-add ~/.ssh/*
+          - checkout
+          - cache restore
+          - bundle install --path vendor/bundle
+          - cache store
