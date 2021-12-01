@@ -13,6 +13,7 @@ blocks:
             - checkout
       secrets:
         - name: match-secrets
+    dependencies: []
   - name: Tests
     task:
       prologue:
@@ -27,6 +28,8 @@ blocks:
             - echo 'running unit tests'
       secrets:
         - name: match-secrets
+    dependencies:
+      - 'Block #1'
   - name: Build app
     task:
       secrets:
@@ -42,3 +45,5 @@ blocks:
           - cache restore
           - bundle install --path vendor/bundle
           - cache store
+    dependencies:
+      - Tests
