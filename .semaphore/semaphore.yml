@@ -13,6 +13,7 @@ blocks:
             - checkout
       secrets:
         - name: match-secrets
+    dependencies: []
   - name: Tests
     task:
       prologue:
@@ -27,11 +28,17 @@ blocks:
             - echo 'running unit tests'
       secrets:
         - name: match-secrets
+    dependencies:
+      - 'Block #1'
   - name: Build app
     task:
       secrets:
-      - name: match-secrets
+        - name: match-secrets
+      jobs:
+        - name: 'Job #1'
+          commands: []
       prologue:
+<<<<<<< HEAD
       commands:
         - chmod 0600 ~/.ssh/*
         - ssh-add ~/.ssh/id_rsa
@@ -39,3 +46,14 @@ blocks:
         - cache restore
         - bundle install --path vendor/bundle
         - cache store
+=======
+        commands:
+          - chmod 0600 ~/.ssh/*
+          - ssh-add ~/.ssh/*
+          - checkout
+          - cache restore
+          - bundle install --path vendor/bundle
+          - cache store
+    dependencies:
+      - Tests
+>>>>>>> 9a1a911ecc163a27faf91e148af994d93fdb36d8
