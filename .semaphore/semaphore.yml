@@ -28,6 +28,9 @@ blocks:
       secrets:
         - name: match-secrets
   - name: Build app
-  task:
+    task:
       secrets:
-      - name: match-secrets
+        - name: match-secrets
+      jobs:
+        - name: 'Job #1'
+          commands: []
