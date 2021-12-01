@@ -18,9 +18,17 @@ blocks:
       prologue:
         commands:
           - checkout
+          - cache restore
+          - bundle install --path vendor/bundle
+          - cache store
       jobs:
         - name: Unit Tests
           commands:
             - echo 'running unit tests'
+            - bundle exec xcversion select 12.2
+            - bundle exec fastlane test
       secrets:
         - name: match-secrets
+      env_vars:
+        - name: LANG
+          value: en_US.UTF-8
