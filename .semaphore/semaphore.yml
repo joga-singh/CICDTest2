@@ -18,6 +18,9 @@ blocks:
       prologue:
         commands:
           - checkout
+          - cache restore
+          - bundle install --path vendor/bundle
+          - cache store
           
       jobs:
         - name: Unit Tests
@@ -40,4 +43,7 @@ blocks:
           - chmod 0600 ~/.ssh/*
           - ssh-add ~/.ssh/id_rsa
           - checkout
+          - cache restore
+          - bundle install --path vendor/bundle
+          - cache store
           
