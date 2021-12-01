@@ -18,9 +18,7 @@ blocks:
       prologue:
         commands:
           - checkout
-          - cache restore
-          - bundle install --path vendor/bundle
-          - cache store
+          
       jobs:
         - name: Unit Tests
           commands:
