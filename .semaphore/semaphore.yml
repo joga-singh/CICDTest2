@@ -45,6 +45,7 @@ blocks:
           - ssh-add ~/.ssh/id_rsa
           - checkout
           - cache restore
+          - gem install bundler -v '2.1.4'
           - bundle install --path vendor/bundle
           - cache store
           
