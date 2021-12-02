@@ -19,7 +19,7 @@ blocks:
         commands:
           - checkout
           - cache restore
-          - gem install bundler -v '2.6.8'
+          - gem install bundler -v '2.1.4'
           - bundle install --path vendor/bundle
           - cache store
           
