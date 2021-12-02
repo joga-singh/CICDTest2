@@ -2,8 +2,8 @@ version: v1.0
 name: Initial Pipeline
 agent:
   machine:
-    type: e1-standard-2
-    os_image: ubuntu2004
+        type: a1-standard-4
+        os_image: macos-xcode12.2
 blocks:
   - name: 'Block #1'
     task:
@@ -35,8 +35,8 @@ blocks:
       jobs:
         - name: Build
           commands:
-            - /usr/bin/bundle exec xcversion select 12.2
-            - /usr/bin/bundle exec fastlane build
+            - bundle exec xcversion select 12.2
+            - bundle exec fastlane build
             - artifact push job build/Project1.ipa
       prologue:
         commands:
