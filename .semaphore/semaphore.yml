@@ -35,8 +35,8 @@ blocks:
       jobs:
         - name: Build
           commands:
-            - bundle exec xcversion select 12.2
-            - bundle exec fastlane build
+            - /usr/bin/bundle exec xcversion select 12.2
+            - /usr/bin/bundle exec fastlane build
             - artifact push job build/Project1.ipa
       prologue:
         commands:
