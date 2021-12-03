@@ -1,0 +1,16 @@
+current directory: /Users/ajdevtech/Desktop/CICDTest/vendor/bundle/ruby/3.0.0/gems/unf_ext-0.0.8/ext/unf_ext
+/Users/ajdevtech/.rvm/rubies/ruby-3.0.0/bin/ruby -I /Users/ajdevtech/.rvm/rubies/ruby-3.0.0/lib/ruby/3.0.0 -r ./siteconf20211203-54259-3hon41.rb extconf.rb
+checking for -lstdc++... yes
+creating Makefile
+
+current directory: /Users/ajdevtech/Desktop/CICDTest/vendor/bundle/ruby/3.0.0/gems/unf_ext-0.0.8/ext/unf_ext
+make "DESTDIR=" clean
+
+current directory: /Users/ajdevtech/Desktop/CICDTest/vendor/bundle/ruby/3.0.0/gems/unf_ext-0.0.8/ext/unf_ext
+make "DESTDIR="
+compiling unf.cc
+linking shared-object unf_ext.bundle
+
+current directory: /Users/ajdevtech/Desktop/CICDTest/vendor/bundle/ruby/3.0.0/gems/unf_ext-0.0.8/ext/unf_ext
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 unf_ext.bundle ./.gem.20211203-54259-x3ixl3
