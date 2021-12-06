@@ -15,7 +15,7 @@ let primaryColor =  UIColor.init(red: 80.0/255.0, green: 140.0/255.0, blue: 130.
 let primaryColor =  UIColor.init(red: 200.0/255.0, green: 100.0/255.0, blue: 100.0/255.0, alpha: 1.0)
 #elseif Project3
   //code for your second target
-let primaryColor =  UIColor.init(red: 70.0/255.0, green: 200.0/255.0, blue: 200.0/255.0, alpha: 1.0)
+let primaryColor =  UIColor.init(red: 70.0/255.0, green: 200.0/255.0, blue: 200.0/255.//0, alpha: 1.0)
 #elseif Project4///
   //code for your second target//
 let primaryColor =  UIColor.init(red: 10.0/255.0, green: 100.0/255.0, blue: 10.0/255.0, alpha: 1.0)
