@@ -20,7 +20,7 @@ let primaryColor =  UIColor.init(red: 70.0/255.0, green: 200.0/255.0, blue: 200.
   //code for your second target//
 let primaryColor =  UIColor.init(red: 10.0/255.0, green: 100.0/255.0, blue: 10.0/255.0, alpha: 1.0)
 #else///
-  //default code targets/////
+  //default code targets/////cc
 let primaryColor =  UIColor.init(red: 0.0/255.0, green: 0.0/255.0, blue: 1.0/255.0, alpha: 1.0)
 #endif*/
 
