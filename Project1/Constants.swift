@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 /*#if Project1///////////////jjj///cc///cccc////////hhhh/////////////////vvvv//////////////////jjjjhyhhhh///////////
-  //code for your first target
+  //code for your first target/////
 let primaryColor =  UIColor.init(red: 80.0/255.0, green: 140.0/255.0, blue: 130.0/255.0, alpha: 1.0)
 #elseif Project2
   //code for your second target
